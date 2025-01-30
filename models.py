@@ -38,7 +38,7 @@ class Ad(Base):
     owner: Mapped[str] = mapped_column(String, default=None)
     
     @property
-    def to_dict(self):
+    def dict(self):
         return {
             "id": self.id,
             "title": self.title,
